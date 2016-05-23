@@ -5,10 +5,12 @@ $icon-font-path: '../fonts/';
 // endbower
 
 // main.scss
-@import 'abstracts/_variables';
+@import 
+  'abstracts/variables';
 // @import 'vendors/*';
 // @import 'base/*';
-// @import 'layout/*';
+@import
+  'layout/navigation';
 // @import 'components/*';
 // @import 'pages/*';
 // @import 'themes/*';

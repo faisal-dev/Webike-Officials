@@ -1,0 +1,89 @@
+$nav-top-color: $black;
+$navbar-height: 7em;
+$nav-top-size: 1.3em;
+
+/*-------------------------*/
+/*  Overwrite Nav
+/*-------------------------*/
+
+.navbar-toggle {
+  background-color: $primary-color;
+  padding: 18px;
+  margin-top: 20px;
+  
+  .icon-bar {
+    background-color: #fff;
+  }
+}
+
+.nav {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+}
+
+.navbar-fixed-top {
+  border-top: 3px solid $primary-color;
+  border-bottom: 1px solid #eee;
+  height: $navbar-height;
+}
+
+
+/*----- Navbar Brand ------*/
+.navbar-brand {
+  height: auto;
+  padding: 1.4em;
+}
+
+.navbar-brand > img {
+  width: 140px;
+}
+
+
+/*----- Nav Top Menu ------*/
+.nav-top-menu a {
+  color: $nav-top-color;
+  line-height: 4.1;
+  font-size: $nav-top-size;
+}
+
+.nav-top-menu > li > a:hover,
+.nav-top-menu > li > a:focus {
+  background-color: transparent;
+  color: $primary-color;
+}
+
+
+/*-----------------------------------------------------
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+  .nav-top-menu a {
+    line-height: 3;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+  
+  .navbar-header {
+    width: 100%;
+  }
+  
+  .nav-top-menu a {
+    font-size: 1em;
+    line-height: 3;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+  .navbar-header {
+    width: auto;
+  }
+  
+  .nav-top-menu a {
+    font-size: 3.8;
+    line-height: 5.4;
+  }
+}
+
+
